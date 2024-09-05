@@ -1,4 +1,17 @@
 .containerContac{
     display: flex;
     flex-direction: row;
+    background-color: rgb(17,27,33);
+    color: white;
+}
+.titleContac{
+    padding: 10px;
+    font-size: 1.5rem;
+}
+.contac{
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    font-size: 1rem;
+    padding: 10px;
 }

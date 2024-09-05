@@ -10,13 +10,13 @@ const Contac = () => {
         <div className='containerContac'>
             <Navbar />
             <div>
-            Contac
+            <h2 className='titleContac'>Chats</h2>
             {data.map(contactos => {
                 return (
-                    <div key={contactos.id}>
+                    <div className='contac' key={contactos.id}>
                         <Link to={'/contac/' + contactos.id}>
-                            {contactos.nombre}
-                            {contactos.ultima_vez}
+                            <p className='nombreContac'>{contactos.nombre}</p>
+                            <p className='ultimaVez'>{contactos.ultima_vez}</p>
                         </Link>
                     </div>
                 )

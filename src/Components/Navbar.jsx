@@ -2,7 +2,9 @@ import React from 'react'
 import './navbar.css'
 const Navbar = () => {
     return (
-        <div className='containerNav'>Navbar</div>
+        <div className='containerNav'>
+            
+        </div>
     )
 }
 
