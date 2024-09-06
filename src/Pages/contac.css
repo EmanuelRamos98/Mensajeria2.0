@@ -1,17 +1,43 @@
-.containerContac{
+.containerContac {
     display: flex;
     flex-direction: row;
-    background-color: rgb(17,27,33);
+    background-color: rgb(17, 27, 33);
     color: white;
+    height: 100vh;
+    position: relative;
 }
-.titleContac{
+
+.titleContac {
     padding: 10px;
     font-size: 1.5rem;
+    position: sticky;
+    top: 0;
+    background-color: rgb(17, 27, 33);
 }
-.contac{
+
+.listContac {
+    overflow-y: scroll;
+    width: 400px;
+}
+
+.listContac::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.listContac::-webkit-scrollbar-thumb {
+    background-color: #81808062;
+}
+
+.contac {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 200px;
     font-size: 1rem;
     padding: 10px;
+}
+
+.imgContac {
+    width: 50px;
+    border-radius: 50%;
 }

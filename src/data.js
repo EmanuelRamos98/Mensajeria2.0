@@ -3,7 +3,7 @@ const contactos =
         {
             "id": 1,
             "nombre": "Juan Perez",
-            "imagen": "https://example.com/imagen1.jpg",
+            "imagen": "/assets/juan.jpeg",
             "ultima_vez": "2023-08-10 14:35",
             "mensajes": [
                 { "id": 1, "hora": "14:15", "texto": "Hola, ¿cómo estás?" },
@@ -15,7 +15,7 @@ const contactos =
         {
             "id": 2,
             "nombre": "María López",
-            "imagen": "https://example.com/imagen2.jpg",
+            "imagen": "/assets/Maria.jpeg",
             "ultima_vez": "2023-08-12 09:50",
             "mensajes": [
                 { "id": 1, "hora": "09:00", "texto": "Buenos días, ¿qué tal?" },
@@ -27,7 +27,7 @@ const contactos =
         {
             "id": 3,
             "nombre": "Carlos Ramirez",
-            "imagen": "https://example.com/imagen3.jpg",
+            "imagen": "/assets/Carlos.jpeg",
             "ultima_vez": "2023-08-11 16:22",
             "mensajes": [
                 { "id": 1, "hora": "15:45", "texto": "Te envíe el archivo por correo." },
@@ -39,7 +39,7 @@ const contactos =
         {
             "id": 4,
             "nombre": "Ana Torres",
-            "imagen": "https://example.com/imagen4.jpg",
+            "imagen": '/assets/Ana.jpeg',
             "ultima_vez": "2023-08-13 11:05",
             "mensajes": [
                 { "id": 1, "hora": "10:45", "texto": "¿Vas a la reunión hoy?" },
@@ -51,7 +51,7 @@ const contactos =
         {
             "id": 5,
             "nombre": "Luis Gómez",
-            "imagen": "https://example.com/imagen5.jpg",
+            "imagen": '/assets/Luis.jpeg',
             "ultima_vez": "2023-08-14 17:30",
             "mensajes": [
                 { "id": 1, "hora": "17:00", "texto": "¿Terminaste el proyecto?" },
@@ -62,8 +62,8 @@ const contactos =
         },
         {
             "id": 6,
-            "nombre": "Elena Ruiz",
-            "imagen": "https://example.com/imagen6.jpg",
+            "nombre": "Elian Ruiz",
+            "imagen": "/assets/Elian.jpeg",
             "ultima_vez": "2023-08-12 13:45",
             "mensajes": [
                 { "id": 1, "hora": "13:00", "texto": "¿Qué planes tienes para el fin de semana?" },
@@ -75,7 +75,7 @@ const contactos =
         {
             "id": 7,
             "nombre": "Roberto Martínez",
-            "imagen": "https://example.com/imagen7.jpg",
+            "imagen": "/assets/Roberto (2).jpeg",
             "ultima_vez": "2023-08-15 08:30",
             "mensajes": [
                 { "id": 1, "hora": "08:00", "texto": "Buenos días, ¿todo listo para hoy?" },
@@ -87,7 +87,7 @@ const contactos =
         {
             "id": 8,
             "nombre": "Sofía Hernández",
-            "imagen": "https://example.com/imagen8.jpg",
+            "imagen": "/assets/Sofia.jpeg",
             "ultima_vez": "2023-08-16 12:15",
             "mensajes": [
                 { "id": 1, "hora": "11:45", "texto": "¿Cómo te ha ido en el trabajo?" },
@@ -99,7 +99,7 @@ const contactos =
         {
             "id": 9,
             "nombre": "Ricardo Sánchez",
-            "imagen": "https://example.com/imagen9.jpg",
+            "imagen": "/assets/Ricardo.jpeg",
             "ultima_vez": "2023-08-17 14:45",
             "mensajes": [
                 { "id": 1, "hora": "14:00", "texto": "Hola, ¿has visto los últimos cambios?" },
@@ -111,7 +111,7 @@ const contactos =
         {
             "id": 10,
             "nombre": "Valeria Castillo",
-            "imagen": "https://example.com/imagen10.jpg",
+            "imagen": "/assets/Valeria.jpeg",
             "ultima_vez": "2023-08-18 10:05",
             "mensajes": [
                 { "id": 1, "hora": "09:30", "texto": "¿Ya estás en la oficina?" },

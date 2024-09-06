@@ -1,6 +1,17 @@
 .containerChats{
     display: flex;
 }
+.div{
+    width: 100%;
+    height: 100vh;
+}
 .chats{
-    margin: 50px;
+    
+}
+.navbarChat{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(32,44,51);
+    color: white;
+    font-size: 1.3rem;
 }
