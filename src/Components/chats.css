@@ -1,3 +1,20 @@
+.navbarChat{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 10px;
+    gap: 10px;
+}
+.containerNombre{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5px;
+}
+.perfilNavbarChat{
+    width: 50px;
+    border-radius: 50%;
+}
 .containerChats{
     display: flex;
 }
@@ -5,13 +22,29 @@
     width: 100%;
     height: 100vh;
 }
-.chats{
-    
-}
 .navbarChat{
     width: 100%;
     height: 70px;
     background-color: rgb(32,44,51);
     color: white;
     font-size: 1.3rem;
+}
+.volverButton{
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+}
+.arrowBack{
+    font-size: 25px;
+}
+
+@media screen and (max-width:500px){
+    .containerContacChat{
+        display: none
+    }
+}
+@media screen and (min-width:500px) {
+    .volverButton{
+        display: none;
+    }
 }

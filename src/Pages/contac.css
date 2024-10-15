@@ -17,7 +17,7 @@
 
 .listContac {
     overflow-y: scroll;
-    width: 400px;
+    width: 100%;
 }
 
 .listContac::-webkit-scrollbar {
@@ -32,7 +32,9 @@
 .contac {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
     font-size: 1rem;
     padding: 10px;
 }
@@ -40,4 +42,35 @@
 .imgContac {
     width: 50px;
     border-radius: 50%;
+}
+
+@media screen and (min-width:500px) {
+    .listContac{
+        width: 300px;
+    }
+}
+@media screen and (max-width:700px) {
+    .containerNavbarContac{
+        display: none;
+    }
+}
+@media screen and (max-width:500px){
+    .titleContac{
+        display: flex;
+        width: 100%;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    .listContac{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contac{
+        width: 300px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 10px 50px;
+    }
 }
