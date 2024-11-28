@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import { Contac } from '../Pages';
 import { MdOutlineArrowBack } from "react-icons/md";
 import data from '../data'
 import './chats.css'
+import PerfilModal from './PerfilModal';
 
 
 const Chats = () => {
@@ -11,12 +12,16 @@ const Chats = () => {
     const chat = data.find(el => el.id === Number(contac_id))
     const mensajes = chat.mensajes
     const nav = useNavigate()
+    const [modalIsOpen, setIsOpen] = useState(false)
 
-    const handleClick = () => {
-        nav('/contac')
-    }
+    const openModal = () => { setIsOpen(true) }
+    const closeModal = () => { setIsOpen(false) }
+    const handleClick = () => { nav('/contac') }
+
 
     return (
+        <>
+        <div className={`overlay ${modalIsOpen && 'active'}`}></div>
         <div className='containerChats'>
             <div className='containerContacChat'>
                 <Contac />
@@ -27,7 +32,7 @@ const Chats = () => {
                         <span>{chat.ultima_vez}</span>
                         <span>{chat.nombre}</span>
                     </div>
-                    <img src={chat.imagen} alt="imagen-perfil" className='perfilNavbarChat'/>
+                    <img src={chat.imagen} onClick={openModal} alt="imagen-perfil" className='perfilNavbarChat' />
                     <button onClick={handleClick}
                         className='volverButton'>
                         <MdOutlineArrowBack className='arrowBack' />
@@ -44,8 +49,9 @@ const Chats = () => {
                     })}
                 </div>
             </div>
-        </div>
-
+        </div>        
+        <PerfilModal mostrar={modalIsOpen} cerrar={closeModal} prefil={chat}/>
+        </>
     )
 }
 
